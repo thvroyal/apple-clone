@@ -157,6 +157,9 @@ li {
     background-color: #000;
     z-index: 0;
 }
+.bg-white2 {
+    background-color: #fbfbfd;
+}
 .feature-title {
     text-align: center;
     margin-top: 2rem;
@@ -197,6 +200,16 @@ li {
 }
 .img-item2 {
     background-image: url(../img/black-z.jpg);
+    background-size: 100%;
+    background-position: center 13%;
+}
+.img-item3 {
+    background-image: url(../img/banner3.jpg);
+    background-size: 100%;
+    background-position: center 13%;
+}
+.img-item4 {
+    background-image: url(../img/banner4.jpg);
     background-size: 100%;
     background-position: center 13%;
 }
