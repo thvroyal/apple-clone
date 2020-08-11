@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apple Clone</title>
+
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/7.17.2/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/7.17.2/firebase-auth.js"></script>
+  <script defer src="/__/firebase/7.17.2/firebase-database.js"></script>
+  <script defer src="/__/firebase/7.17.2/firebase-messaging.js"></script>
+  <script defer src="/__/firebase/7.17.2/firebase-storage.js"></script>
+  <!-- initialize the SDK after all desired features are loaded -->
+  <script defer src="/__/firebase/init.js"></script>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="icon" href="/public/img/logo.svg">
+</head>
+
+<body>
+  <!-- Design nav-bar  -->
+  <ul class="nav">
+    <li><a href="#"><img src="img/logo.svg" alt="Apple" class="nav-brand" /></a></li>
+    <li><a href="#" class="text-center">Mac</a></li>
+    <li><a href="#" class="text-center">iPad</a></li>
+    <li><a href="#" class="text-center">iPhone</a></li>
+    <li><a href="#" class="text-center">Watch</a></li>
+    <li><a href="#" class="text-center">TV</a></li>
+    <li><a href="#" class="text-center">Music</a></li>
+    <li><a href="#" class="text-center">Support</a></li>
+    <li><a href="#"><img src="img/search.svg" alt="" class="nav-brand"></a></li>
+    <li><a href="#"><img src="img/bag.svg" alt="" class="nav-brand"></a></li>
+  </ul>
+  <div class="container">
+    <div class="caution-tip">
+      <p><a href="#">Shop online</a> and get free, no-contact delivery, Specialist help, and more.</p>
+    </div>
+    <!-- Banner 1 -->
+    <div class="img-slide">
+      <div class="content-slide">
+        <h1>iPhoneSE</h1>
+        <p>Lost to love. Less to spend.<br />Starting at $399.</p>
+        <span>From $9.54/mo. or $229 with trade in.</span>
+        <div class="content-slide-link"> <a href="#">Learn more.</a>
+          <a href="#">Buy.</a></div>
+
+      </div>
+
+      <div class="img-src src-1"></div>
+      
+  </div>
+  <!-- Banner 2 -->
+      <div class="img-slide white-bg" style="margin-bottom: 0;">
+        <div class="content-slide text-black">
+          <h1>iPhone 11</h1>
+          <p>Just the right amount of everthing.</p>
+          <span class="text-black" style="opacity: .6;">From $19.95/mo. or $479 with trade in.</span>
+          <div class="content-slide-link"> <a href="#">Learn more.</a>
+            <a href="#">Buy.</a></div>
+  
+        </div>
+  
+        <div class="img-src src-2"></div>
+    </div>
+    <div class="feature">
+      <section class="feature-item bg-white">
+        <div class="feature-title">
+          <h3>Make them yours.</h3>
+        <p>Personalize your AirPods with free engraving. Only at Apple.</p>
+         <a href="#">Learn more.</a>
+          <a href="#">Buy.</a>
+        </div>
+        <div class="feature-img img-item1"></div>
+      </section>
+      <section class="feature-item bg-black">
+        <div class="feature-title">
+          <h3 class="text-white">The power of Apple.<br/>Put to work.</h3>
+         <a href="#">Learn more.</a>
+        </div>
+        <div class="feature-img img-item2"></div>
+      </section>
+      <section class="feature-item">
+        <div class="feature-title">
+          <h3>Make them yours.</h3>
+        <p>Personalize your AirPods with free engraving. Only at Apple.</p>
+          <a href="#">Buy.</a>
+        </div>
+        <div class="feature-img img-item1"></div>
+      </section>
+      <section class="feature-item">
+        <div class="feature-title">
+          <h3>Make them yours.</h3>
+        <p>Personalize your AirPods with free engraving. Only at Apple.</p>
+         <a href="#">Learn more.</a>
+          <a href="#">Buy.</a>
+        </div>
+        <div class="feature-img img-item1"></div>
+      </section>
+    </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+      // // The Firebase SDK is initialized and available here!
+      //
+      // firebase.auth().onAuthStateChanged(user => { });
+      // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+      // firebase.messaging().requestPermission().then(() => { });
+      // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+      //
+      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+      try {
+        let app = firebase.app();
+        let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] ===
+          'function');
+        document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+      } catch (e) {
+        console.error(e);
+        document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+      }
+    });
+  </script>
+</body>
+
+</html>
