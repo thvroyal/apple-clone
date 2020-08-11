@@ -70,8 +70,16 @@ li {
     }
     .feature {
         grid-template-columns: 1fr!important;
+        grid-template-rows: repeat(4, 500px)!important;
+
     }
-    
+    .btn-register {
+        width: 500px!important;
+        margin-top: .4rem;
+    }
+    footer li {
+        font-size: .85rem;
+    }
 }
 .caution-tip {
     padding: .15em;
@@ -234,4 +242,26 @@ li {
     color: #fafafa;
     cursor: pointer;
     border: none;
+}
+.footer {
+    text-align: center;
+    margin-top: 2rem;
+    color: rgb(94, 94, 94);
+    padding: 0;
+}
+.footer li {
+    display: inline;
+}
+.footer li:nth-child(-n+4)::after {
+    content: " | ";
+    margin: 0 .5rem;
+}
+footer hr {
+    width: 100px;
+    margin: .5rem auto;
+}
+footer p {
+    color: rgb(180, 180, 180);
+    font-size: .8rem;
+    text-align: center;
 }
