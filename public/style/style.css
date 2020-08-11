@@ -144,7 +144,7 @@ li {
     padding: 0;
     margin: .5rem;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 500px);
+    grid-template-rows: repeat(2, 500px);
     column-gap: .5rem;
     row-gap: .5rem;
     grid-auto-flow: row;
@@ -212,4 +212,26 @@ li {
     background-image: url(../img/banner4.jpg);
     background-size: 100%;
     background-position: center 13%;
+}
+.email-register {
+    padding: 5px 0;
+    padding-bottom: 27px;
+}
+.form-input,.btn-register {
+    height: 45px;
+    border-radius: 2px;
+    font-size: 1rem;
+}
+.form-input {
+    width: 500px;
+    padding: 10px;
+    border: 1px solid #d6d6d6;
+
+}
+.btn-register {
+    width: 90px;
+    background-color: blue;
+    color: #fafafa;
+    cursor: pointer;
+    border: none;
 }
