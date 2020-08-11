@@ -1,2 +1,2 @@
 # apple-clone
-Clone Apple page (training html, css, responsive)
+Clone Apple page (training html, css, responsive, firebase)
